@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:background="#f00"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:id="@+id/toolbar2">
+            <com.example.pro.test1.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/nocircle"
+                android:id="@+id/imageView4" />
+            <TextView
+                android:text=" 好好约会"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tool_bar_text2"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <!--<android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycleview1"
+            android:layout_weight="0.01">
+
+        </android.support.v7.widget.RecyclerView>-->
+    <ListView
+        android:id = "@+id/twofrag_postlist"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#ffffff"
+        android:dividerHeight="10dp">
+
+    </ListView>
+    </LinearLayout>
+    <!--<com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        app:menu_icon="@android:drawable/ic_input_add"
+        app:menu_colorNormal="@color/colorAccentDark"
+        app:menu_colorPressed="@color/colorA"
+        app:menu_labels_ellipsize="end"
+        app:menu_labels_singleLine="true"
+        app:menu_backgroundColor="#ccffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorAccentDark"
+            app:fab_colorPressed="@color/colorA"
+            app:fab_size="mini"
+            app:fab_label="分享"
+            android:src="?attr/actionModeShareDrawable" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorAccentDark"
+            app:fab_colorPressed="@color/colorA"
+            app:fab_size="mini"
+            app:fab_label="上传"
+            android:src="@android:drawable/ic_menu_upload" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorAccentDark"
+            app:fab_colorPressed="@color/colorA"
+            app:fab_size="mini"
+            app:fab_label="预览"
+            android:src="@android:drawable/ic_menu_mylocation" />
+
+    </com.github.clans.fab.FloatingActionMenu>-->
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/colorAccentDark"
+        app:fab_colorPressed="@color/colorA"
+        app:fab_size="mini"
+        app:fab_label="预览"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/ic_menu_edit" />
+
+</RelativeLayout>

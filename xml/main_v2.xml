@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hjm="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".MainActivity">
+    <!--<android.support.v7.widget.Toolbar
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="#f00"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/toolbar">
+        <ImageView android:layout_height="30dp" android:layout_width="30dp"
+
+            app:srcCompat="@android:drawable/star_big_on" />
+
+        <TextView
+            android:text="好好约会"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tool_bar_text"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    </android.support.v7.widget.Toolbar>-->
+    <!--<android.support.v7.widget.Toolbar
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="#f00"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/toolbar">
+
+        <com.example.pro.test1.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/nocircle"
+            android:id="@+id/image_circle" />
+
+        <TextView
+            android:text="好好约会"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tool_bar_text"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    </android.support.v7.widget.Toolbar>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_above="@+id/tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.jpeng.jptabbar.JPTabBar
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:TabHeight="56dp"
+        app:BadgeDraggable="true"
+        app:TabAnimate="Jump"
+        app:BadgePadding="4dp"
+        app:BadgeMargin="5dp"
+        app:BadgeTextSize="10dp" />
+
+</RelativeLayout>

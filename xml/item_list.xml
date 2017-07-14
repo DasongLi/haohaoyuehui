@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:weightSum="1"
+        android:background="#fff">
+
+
+        <com.example.pro.test1.CircleImageView
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/barrafina"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/imageView2" />
+
+        <!--<ImageView
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/barrafina"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/imageView2"
+            />-->
+
+        <!--<TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_weight="0.99" />-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:id="@+id/textView1" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:id="@+id/textView3" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_6"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true">
+
+    </Button>-->
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_pageone_item_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/colorAccentDark"
+        app:fab_colorPressed="@color/colorA"
+        app:fab_size="mini"
+        app:fab_label="预览"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+</RelativeLayout>
